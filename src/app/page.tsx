@@ -84,7 +84,6 @@ export default function Home() {
             <CountdownTimer />
           </div>
         </div>
-        <div className="w-full mx-auto">
           <LiveMatches />
           <ScanPayJoin />
           <AITeamMaker />
@@ -95,7 +94,6 @@ export default function Home() {
           <RegionalSupport />
           <FAQ />
           <EarlyAccess />
-        </div>
       </main>
       <Footer />
     </div>
