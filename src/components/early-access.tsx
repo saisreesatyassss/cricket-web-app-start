@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, Check, IndianRupee, Bot } from "lucide-react";
+import { ArrowRight, Check,  Bot } from "lucide-react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
@@ -85,10 +85,10 @@ export function EarlyAccess() {
                   <Check className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
                 <span className="flex items-center text-sm sm:text-base">
-                  Deposit <IndianRupee className="h-3 w-3 mx-1" />
+                  Deposit 
                   <span className="font-bold text-[#ff7723]">
                                 ₹99
-                              </span>{" "}, get <IndianRupee className="h-3 w-3 mx-1" />
+                              </span>{" "}, get 
                   <span className="font-bold text-[#ff7723]">
                                 ₹149
                               </span>{" "} in 4 days
@@ -151,7 +151,7 @@ export function EarlyAccess() {
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Get</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                    <IndianRupee className="inline-flex h-4 w-4 md:h-5 md:w-5" />
+                    {/* <IndianRupee className="inline-flex h-4 w-4 md:h-5 md:w-5" /> */}
                     <span className="font-bold text-[#ff7723]">
                                 ₹149
                               </span>{" "} + AI Team Maker
