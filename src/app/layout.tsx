@@ -4,15 +4,56 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
-
-export const metadata = {
-  title: "Cricket Panga - Fantasy Cricket Game",
-  description:
-    "Join India's fastest growing fantasy cricket platform. Create your dream team, compete with friends, and win real cash prizes.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-}
-
-export default function RootLayout({
+    export const metadata = {
+      title: "Cricket Panga - Fantasy Cricket Game",
+      themeColor: "#0F3CA1",
+      description:
+        "Join India's fastest growing fantasy cricket platform. Create your dream team, compete with friends, and win real cash prizes.",
+      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      icons: {
+        icon: [
+          {url: "/Logo.svg", type: "image/svg+xml"},
+          {url: "/icons/icon-192x192.png", type: "image/png"},
+          {url: "/icons/icon-384x384.png", type: "image/png"},
+          {url: "/icons/icon-512x512.png", type: "image/png"},
+        ]
+      },
+      apple: {
+        icon: [
+          {url: "/icons/icon-192x192.png", type: "image/png"},
+          {url: "/icons/icon-384x384.png", type: "image/png"},
+          {url: "/icons/icon-512x512.png", type: "image/png"},
+        ]
+      },
+      opengraph: {
+        title: "Cricket Panga - Fantasy Cricket Game",
+        description:
+          "Join India's fastest growing fantasy cricket platform. Create your dream team, compete with friends, and win real cash prizes.",
+        url: "https://cricketpanga.com",
+        siteName: "Cricket Panga",
+        locale: "en_IN",
+        type: "website",
+        images: [
+          {url: "/icons/icon-512x512.png", width: 1200, height: 630, alt: "Cricket Panga - Fantasy Cricket Game"},
+        ]
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Cricket Panga - Fantasy Cricket Game",
+        description:
+          "Join India's fastest growing fantasy cricket platform. Create your dream team, compete with friends, and win real cash prizes.",
+        images: [
+          {url: "/icons/icon-512x512.png", width: 1200, height: 630, alt: "Cricket Panga - Fantasy Cricket Game"},
+        ]
+      },
+      appleWebApp: {
+        capable: true,
+        title: "Cricket Panga",
+        statusBarStyle: "default",
+        navigationBarColor: "#0F3CA1",
+      },
+    }
+    export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode

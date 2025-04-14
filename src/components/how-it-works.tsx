@@ -16,7 +16,7 @@ export function HowItWorks() {
     {
       number: 1,
       title: "Sign Up & Deposit",
-      description: "Create your account and add ₹99 to get ₹150 in your wallet within 4 days",
+      description: "Create your account and add ₹99 to get ₹149 in your wallet within 4 days",
       image: "/step1.png",
     },
     {

@@ -158,7 +158,7 @@ export function ScanPayJoin() {
                             </li>
                             <li className="flex items-center gap-1">
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
-                              Get ₹150 credited to your wallet within 4 days
+                              Get ₹149 credited to your wallet within 4 days
                             </li>
                           </>
                         )}

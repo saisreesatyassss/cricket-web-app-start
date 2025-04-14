@@ -84,7 +84,7 @@ export function EarlyAccess() {
                 <span className="flex items-center text-sm sm:text-base">
                   Deposit <IndianRupee className="h-3 w-3 mx-1" />
                   99, get <IndianRupee className="h-3 w-3 mx-1" />
-                  150 in 4 days
+                149 in 4 days
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -132,7 +132,7 @@ export function EarlyAccess() {
                   <div className="text-base md:text-lg">Get</div>
                   <div className="text-2xl md:text-3xl font-bold flex items-center">
                     <IndianRupee className="h-4 w-4 md:h-5 md:w-5" />
-                    150 + AI Team Maker
+                  149 + AI Team Maker
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export function EarlyAccess() {
                   <div className="space-y-2 text-center">
                     <h3 className="text-xl md:text-2xl font-bold">Sign Up for Early Access</h3>
                     <p className="text-sm md:text-base text-gray-500">
-                      Limited time offer - Get ₹150 + FREE AI Team Maker (worth ₹1000) for just ₹99
+                      Limited time offer - Get 149 + FREE AI Team Maker (worth ₹1000) for just ₹99
                     </p>
                   </div>
                   <div className="flex items-center justify-center my-3 md:my-4">
