@@ -96,7 +96,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
           <Button
             asChild
-            className="hidden sm:flex max-w-80 bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:translate-y-0 active:scale-95"
+            className="sm:flex max-w-80 bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:translate-y-0 active:scale-95"
           >
             <Link href="#scan-pay-join" className="flex items-center gap-2">
               Pre Launch Offer

@@ -151,7 +151,6 @@ export function EarlyAccess() {
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Get</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                    {/* <IndianRupee className="inline-flex h-4 w-4 md:h-5 md:w-5" /> */}
                     <span className="font-bold text-[#ff7723]">
                                 ₹149
                               </span>{" "} + AI Team Maker
