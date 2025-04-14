@@ -117,8 +117,8 @@ export function AITeamMaker() {
                 size="lg"
                 className="bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 group"
               >
-                <Link href="#early-access" className="inline-flex items-center gap-2">
-                  Get Early Access Now <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Link href="#scan-pay-join" className="inline-flex items-center gap-2">
+                  Pre Launch Offer <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
               <p className="text-xs text-gray-500 mt-2">

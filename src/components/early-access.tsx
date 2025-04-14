@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, Check,  Bot } from "lucide-react";
+import { ArrowRight, Check, Bot } from "lucide-react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
@@ -85,13 +85,7 @@ export function EarlyAccess() {
                   <Check className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
                 <span className="flex items-center text-sm sm:text-base">
-                  Deposit 
-                  <span className="font-bold text-[#ff7723]">
-                                ₹99
-                              </span>{" "}, get 
-                  <span className="font-bold text-[#ff7723]">
-                                ₹149
-                              </span>{" "} in 4 days
+                  Deposit <span>{" "}</span><span className="font-bold text-[#ff7723]">₹99</span>, get <span>{" "}</span><span className="font-bold text-[#ff7723]">₹149</span> in 4 days
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -133,14 +127,12 @@ export function EarlyAccess() {
               <div className="absolute -top-3 -right-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
                 Limited Time Offer!
               </div>
-              <div className="flex items-center justify-between  flex-nowrap space-x-2">
+              <div className="flex items-center justify-between flex-nowrap space-x-2">
                 {/* Pay side */}
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Pay</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                  <span className="font-bold text-[#ff7723]">
-                                ₹99
-                              </span>{" "}
+                    <span className="font-bold text-[#ff7723]">₹99</span>
                   </div>
                 </div>
 
@@ -151,9 +143,7 @@ export function EarlyAccess() {
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Get</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                    <span className="font-bold text-[#ff7723]">
-                                ₹149
-                              </span>{" "} + AI Team Maker
+                    <span className="font-bold text-[#ff7723]">₹149</span> + AI Team Maker
                   </div>
                 </div>
               </div>
@@ -187,12 +177,8 @@ export function EarlyAccess() {
                       Sign Up for Early Access
                     </h3>
                     <p className="text-sm md:text-base text-gray-500">
-                      Limited time offer - Get                               <span className="font-bold text-[#ff7723]">
-                                ₹149
-                              </span>{" "} + FREE AI Team Maker (worth
-                      ₹1000) for just                               <span className="font-bold text-[#ff7723]">
-                                ₹99
-                              </span>{" "}
+                      Limited time offer - Get <span className="font-bold text-[#ff7723]">₹149</span> + FREE AI Team Maker (worth
+                      ₹1000) for just <span className="font-bold text-[#ff7723]">₹99</span>
                     </p>
                   </div>
                   <div className="flex items-center justify-center my-3 md:my-4">
@@ -254,9 +240,7 @@ export function EarlyAccess() {
                           "Processing..."
                         ) : (
                           <>
-                            Pay                               <span className="font-bold text-[#ff7723]">
-                                ₹99
-                              </span>{" "} & Get Started{" "}
+                            Pay <span className="font-bold text-[#ff7723]">₹99</span> & Get Started{" "}
                             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                           </>
                         )}
