@@ -193,15 +193,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/footer";
+ import React, { ChangeEvent, FormEvent } from 'react';
 
 // Reminder: Keep this list updated based on current legal regulations for online gaming in India.
-const legalGamingStates1 = [
-  "Sikkim",
-  "Goa",
-  "Nagaland",
-  "Meghalaya",
-  "Daman and Diu",
-];
+
 const legalGamingStates = [
   "Arunachal Pradesh",
   "Bihar",
@@ -239,21 +234,23 @@ export default function LoginPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [userData, setUserData] = useState({
-    name: "",
-    phone: "",
-    state: ""
-  });
 
-  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
-    const { name, value } = e.target;
-    setUserData(prev => ({ ...prev, [name]: value }));
-  };
+const [userData, setUserData] = useState({
+  name: "",
+  phone: "",
+  state: ""
+});
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-  };
+const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const { name, value } = e.target;
+  setUserData(prev => ({ ...prev, [name]: value }));
+};
+
+const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setFormSubmitted(true);
+};
+
 
   const handlePaymentComplete = async () => {
     setIsSubmitting(true);
