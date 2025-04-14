@@ -7,6 +7,7 @@ import { ArrowRight, Check, Bot } from "lucide-react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { TextShimmer } from "./ui/text-shimmer";
 
 export function EarlyAccess() {
   const [formState, setFormState] = useState({
@@ -85,7 +86,21 @@ export function EarlyAccess() {
                   <Check className="h-3 w-3 sm:h-4 sm:w-4 text-white" />
                 </div>
                 <span className="flex items-center text-sm sm:text-base">
-                  Deposit <span>{" "}</span><span className="font-bold text-[#ff7723]">₹99</span>, get <span>{" "}</span><span className="font-bold text-[#ff7723]">₹149</span> in 4 days
+                  Deposit <span> </span>
+                  <TextShimmer
+                    duration={1.2}
+                    className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                  >
+                    ₹99
+                  </TextShimmer>
+                  , get <span> </span>
+                  <TextShimmer
+                    duration={1.2}
+                    className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                  >
+                    ₹149
+                  </TextShimmer>{" "}
+                  in 4 days
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -132,7 +147,12 @@ export function EarlyAccess() {
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Pay</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                    <span className="font-bold text-[#ff7723]">₹99</span>
+                    <TextShimmer
+                      duration={1.2}
+                      className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                    >
+                      ₹99
+                    </TextShimmer>
                   </div>
                 </div>
 
@@ -143,7 +163,13 @@ export function EarlyAccess() {
                 <div className="flex flex-nowrap items-center space-x-1">
                   <div className="text-base md:text-lg">Get</div>
                   <div className="text-md md:text-3xl font-bold flex items-center whitespace-nowrap">
-                    <span className="font-bold text-[#ff7723]">₹149</span> + AI Team Maker
+                    <TextShimmer
+                      duration={1.2}
+                      className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                    >
+                      ₹149
+                    </TextShimmer>{" "}
+                    + AI Team Maker
                   </div>
                 </div>
               </div>
@@ -177,8 +203,20 @@ export function EarlyAccess() {
                       Sign Up for Early Access
                     </h3>
                     <p className="text-sm md:text-base text-gray-500">
-                      Limited time offer - Get <span className="font-bold text-[#ff7723]">₹149</span> + FREE AI Team Maker (worth
-                      ₹1000) for just <span className="font-bold text-[#ff7723]">₹99</span>
+                      Limited time offer - Get{" "}
+                      <TextShimmer
+                        duration={1.2}
+                        className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                      >
+                        ₹149
+                      </TextShimmer>{" "}
+                      + FREE AI Team Maker (worth ₹1000) for just{" "}
+                      <TextShimmer
+                        duration={1.2}
+                        className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
+                      >
+                        ₹99
+                      </TextShimmer>
                     </p>
                   </div>
                   <div className="flex items-center justify-center my-3 md:my-4">
@@ -240,7 +278,11 @@ export function EarlyAccess() {
                           "Processing..."
                         ) : (
                           <>
-                            Pay <span className="font-bold text-[#ff7723]">₹99</span> & Get Started{" "}
+                            Pay{" "}
+                            <span className="font-bold text-[#ff7723]">
+                              ₹99
+                            </span>{" "}
+                            & Get Started{" "}
                             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                           </>
                         )}
