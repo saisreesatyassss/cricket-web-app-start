@@ -12,50 +12,49 @@ export function Features() {
   const features = [
     {
       icon: <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "100% Secure",
-      description: "Your data and transactions are protected with bank-grade security",
+      title: "First-Come, First-Serve",
+      description: "Limited to 1 Lakh Sign-Ups with only 50,000 players per match",
     },
     {
       icon: <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Instant Withdrawals",
-      description: "Get your winnings instantly transferred to your bank account or UPI",
+      title: "Exciting Prize Pools",
+      description: "25+ lakhs to be won across 25+ editions of cricket tournaments",
     },
     {
       icon: <Award className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Exciting Contests",
-      description: "Join multiple contests with different entry fees and prize pools",
+      title: "Complete Coverage",
+      description: "Play fantasy cricket for IPL, Team India, WPL, and international matches",
     },
     {
       icon: <Smartphone className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Mobile Friendly",
-      description: "Play anytime, anywhere with our responsive mobile interface",
+      title: "Easy Sign-Up",
+      description: "Scan QR code, pay ₹99, and get ₹149 credited to your wallet",
     },
     {
       icon: <CreditCard className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Indian Payment Options",
-      description: "Add funds using UPI, Paytm, PhonePe, Google Pay, and more",
+      title: "State-Specific Editions",
+      description: "Enjoy localized contests for Goa, Delhi, Mumbai and more regions",
     },
     {
       icon: <Users className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Private Leagues",
-      description: "Create private contests and invite friends to compete",
+      title: "Transparent Gameplay",
+      description: "India's first honest fantasy sports platform with complete transparency",
     },
     {
       icon: <IndianRupee className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "Indian Contests",
-      description: "Specially designed contests for Indian cricket fans and tournaments",
+      title: "Affordable Entry",
+      description: "Participate in matches for just ₹10 per contest with big winning potential",
     },
     {
       icon: <Cricket className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
-      title: "All Indian Leagues",
-      description: "Play fantasy cricket for IPL, Ranji Trophy, Syed Mushtaq Ali, and more",
+      title: "Comprehensive Analytics",
+      description: "Access detailed statistics and performance data from previous matches",
     },
   ]
 
   return (
     <section id="features" className="py-12 md:py-20 bg-white">
-            <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
-
+      <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-blue-50 text-blue-700 border-blue-200">
@@ -66,7 +65,7 @@ export function Features() {
               Why Choose Cricket Panga?
             </h2>
             <p className="max-w-[900px] text-sm sm:text-base text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Experience fantasy cricket like never before with our innovative platform designed for Indian cricket fans
+              India's First Honest Fantasy Sports Platform designed for true cricket fans
             </p>
           </div>
         </div>

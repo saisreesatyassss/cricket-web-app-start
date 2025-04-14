@@ -15,20 +15,20 @@ export function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Sign Up & Deposit",
-      description: "Create your account and add ₹99 to get ₹149 in your wallet within 4 days",
+      title: "Scan, Pay & Join",
+      description: "Scan the QR code, pay ₹99, and text 'Hi' to 8237358618 on WhatsApp",
       image: "/step1.png",
     },
     {
       number: 2,
-      title: "Create Your Team",
-      description: "Select players within your budget and create your fantasy cricket team",
+      title: "Share Receipt & Get Bonus",
+      description: "Send your payment receipt via WhatsApp to receive your ₹50 bonus",
       image: "/step2.png",
     },
     {
       number: 3,
-      title: "Join Contests & Win",
-      description: "Join contests, track live scores, and win cash prizes based on your team's performance",
+      title: "Join Contests & Win Big",
+      description: "Participate in matches for just ₹10 per contest and win from the 25+ lakh prize pool",
       image: "/step3.png",
     },
   ]
@@ -43,7 +43,7 @@ export function HowItWorks() {
               How Cricket Panga Works
             </h2>
             <p className="max-w-[900px] text-sm sm:text-base text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Follow these simple steps to start playing and winning
+              Get started with India's first honest fantasy sports platform in just three simple steps
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export function HowItWorks() {
             className="bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 group"
           >
             <Link href="#scan-pay-join" className="inline-flex items-center gap-2">
-             Pre Launch Offer <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+             Launching June 1, 2025 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>

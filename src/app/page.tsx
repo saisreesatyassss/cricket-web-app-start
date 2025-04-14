@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { HeroSection } from "@/components/hero-section";
 import { Features } from "@/components/features";
 import { HowItWorks } from "@/components/how-it-works";
-import { Testimonials } from "@/components/testimonials";
+// import { Testimonials } from "@/components/testimonials";
 import { FAQ } from "@/components/faq";
 import { EarlyAccess } from "@/components/early-access";
 import { Footer } from "@/components/footer";
-import { LiveMatches } from "@/components/live-matches";
+// import { LiveMatches } from "@/components/live-matches";
 import { MiniGame } from "@/components/mini-game";
 import { RegionalSupport } from "@/components/regional-support";
 import { ScanPayJoin } from "@/components/scan-pay-join";
@@ -49,12 +49,12 @@ export default function Home() {
             >
               How It Works
             </Link>
-            <Link
+            {/* <Link
               href="#live-matches"
               className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
             >
               Live Matches
-            </Link>
+            </Link> */}
             <Link
               href="#ai-team-maker"
               className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
@@ -80,7 +80,7 @@ export default function Home() {
               asChild
               className="hidden sm:flex bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300"
             >
-              <Link href="#scan-pay-join">Pre Launch Offer</Link>
+              <Link href="#early-access">Get Early Access</Link>
             </Button>
             <MobileMenu />
           </div>
@@ -93,13 +93,14 @@ export default function Home() {
             <CountdownTimer />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <EarlyAccess />
+        {/* <div className="flex flex-col items-center justify-center">
           <Button
             asChild
             className="sm:flex max-w-80 bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:translate-y-0 active:scale-95"
           >
-            <Link href="#scan-pay-join" className="flex items-center gap-2">
-              Pre Launch Offer
+            <Link href="#early-access" className="flex items-center gap-2">
+              Get Early Access
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -117,17 +118,16 @@ export default function Home() {
               </svg>
             </Link>
           </Button>
-        </div>
-        <LiveMatches />
+        </div> */}
+        {/* <LiveMatches /> */}
         <ScanPayJoin />
         <AITeamMaker />
         <Features />
         <HowItWorks />
         <MiniGame />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <RegionalSupport />
         <FAQ />
-        <EarlyAccess />
       </main>
       <Footer />
     </div>

@@ -12,18 +12,18 @@ export function HeroSection() {
 
   const slides = [
     {
-      title: "IPL 2025",
-      description: "Create your dream team for the biggest cricket league in India",
+      title: "IPL",
+      description: "Create your dream team with players from the biggest cricket league in India",
       image: "/ipl-slide.png",
     },
     {
-      title: "India vs Australia",
-      description: "The epic rivalry continues. Build your team for the Border-Gavaskar Trophy",
+      title: "India - Men, Women",
+      description: "Support Team India by building your perfect fantasy lineup",
       image: "/ind-aus-slide.png",
     },
     {
-      title: "T20 World Cup",
-      description: "Represent India in the global T20 showdown with your fantasy team",
+      title: "International Cricket",
+      description: "Compete globally with fantasy teams from international matches",
       image: "/t20-slide.png",
     },
   ]
@@ -47,7 +47,7 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-orange-50 text-orange-700 border-orange-200 mb-4">
               <Star className="mr-1 h-3 w-3 sm:h-3.5 sm:w-3.5" />
-              India&apos;s #1 Fantasy Cricket Platform
+              Cricket Panga - 25+ Editions
             </div>
             <div className="space-y-2">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter">
@@ -75,6 +75,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col sm:flex-row gap-2 min-[400px]:flex-row mt-6">
               <Button
+                variant="default"
                 asChild
                 size="lg"
                 className="bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 group px-6"
@@ -84,26 +85,28 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button
-                asChild
                 variant="outline"
                 size="lg"
+                asChild
                 className="hover:border-blue-700 hover:text-blue-700 transition-all duration-300 px-6"
               >
-                <Link href="#ai-team-maker">AI Team Maker</Link>
+              <Link href="#ai-team-maker" className="inline-flex items-center gap-2">
+                AI Team Maker 
+              </Link>
               </Button>
             </div>
             <div className="flex flex-wrap items-center gap-2 sm:gap-4 pt-4 lg:pt-8">
               <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-sm">
                 <Users className="h-3 w-3 sm:h-4 sm:w-4 text-blue-700" />
-                <span className="text-xs sm:text-sm font-medium">10L+ Users</span>
+                <span className="text-xs sm:text-sm font-medium">Only 50,000 Players per Match</span>
               </div>
               <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-sm">
                 <Trophy className="h-3 w-3 sm:h-4 sm:w-4 text-blue-700" />
-                <span className="text-xs sm:text-sm font-medium">₹10Cr+ Won</span>
+                <span className="text-xs sm:text-sm font-medium">₹25+ Lakhs to be won</span>
               </div>
               <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-sm">
                 <TrendingUp className="h-3 w-3 sm:h-4 sm:w-4 text-blue-700" />
-                <span className="text-xs sm:text-sm font-medium">100+ Contests</span>
+                <span className="text-xs sm:text-sm font-medium">Limited to 1 Lakh Sign-Ups</span>
               </div>
             </div>
           </div>

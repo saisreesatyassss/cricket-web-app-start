@@ -303,22 +303,22 @@ export function EarlyAccess() {
                     </div>
                     <div className="flex items-center justify-center gap-2 mt-3 md:mt-4">
                       <img
-                        src="/upi-icon.png"
+                        src="/upi-icon.svg"
                         alt="UPI"
                         className="h-5 md:h-6"
                       />
                       <img
-                        src="/paytm-icon.png"
+                        src="/paytm-icon.svg"
                         alt="Paytm"
                         className="h-5 md:h-6"
                       />
                       <img
-                        src="/phonepe-icon.png"
+                        src="/phonepe-icon.svg"
                         alt="PhonePe"
                         className="h-5 md:h-6"
                       />
                       <img
-                        src="/gpay-icon.png"
+                        src="/gpay-icon.svg"
                         alt="Google Pay"
                         className="h-5 md:h-6"
                       />

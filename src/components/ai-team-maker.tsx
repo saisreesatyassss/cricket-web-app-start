@@ -13,7 +13,7 @@ export function AITeamMaker() {
   })
 
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white" id="ai-team-maker">
      <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-12">
