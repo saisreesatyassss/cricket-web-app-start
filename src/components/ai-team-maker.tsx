@@ -14,7 +14,8 @@ export function AITeamMaker() {
 
   return (
     <section className="py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white">
-      <div className="container px-4 md:px-6">
+     <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
+
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-12">
           <Badge className="px-3 py-1 bg-blue-100 text-blue-700 border-blue-200 rounded-full">
             <Bot className="mr-1 h-3.5 w-3.5" />
@@ -35,7 +36,7 @@ export function AITeamMaker() {
             }`}
           >
             <div className="relative rounded-xl overflow-hidden border shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/100 to-purple-600/90 rounded-xl"></div>
               <div className="relative aspect-video overflow-hidden">
                 <Image src="/ai-team-maker.png" alt="AI Cricket Fantasy Team Maker" fill className="object-contain" />
               </div>

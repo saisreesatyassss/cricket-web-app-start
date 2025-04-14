@@ -64,7 +64,7 @@ export function EarlyAccess() {
       id="early-access"
       className="py-12 md:py-20 bg-gradient-to-r from-blue-700 to-blue-900 text-white"
     >
-      <div className="container px-4 md:px-6">
+      <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div ref={ref} className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div
             className={`flex flex-col justify-center space-y-4 transition-all duration-1000 ${

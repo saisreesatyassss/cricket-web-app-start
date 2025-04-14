@@ -54,7 +54,7 @@ export function RegionalSupport() {
 
   return (
     <section className="py-12 md:py-16 bg-white">
-      <div className="container px-4 md:px-6">
+            <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-6 md:mb-8">
           <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-orange-50 text-orange-700 border-orange-200">
             <Globe className="mr-1 h-3 w-3 sm:h-3.5 sm:w-3.5" />

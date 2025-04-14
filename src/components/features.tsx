@@ -54,7 +54,8 @@ export function Features() {
 
   return (
     <section id="features" className="py-12 md:py-20 bg-white">
-      <div className="container px-4 md:px-6">
+            <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
+
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-blue-50 text-blue-700 border-blue-200">

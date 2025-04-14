@@ -49,7 +49,7 @@ export function ScanPayJoin() {
       className="py-12 md:py-16 bg-gradient-to-b from-white to-blue-50"
       id="scan-pay-join"
     >
-      <div className="container px-4 md:px-6">
+            <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-10">
           <div className="inline-flex items-center rounded-full border px-4 py-1 md:px-6 md:py-2 text-base md:text-lg font-bold bg-orange-100 text-orange-700 border-orange-200">
             Scan Karo, Pay Karo, Join Karo.

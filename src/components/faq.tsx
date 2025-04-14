@@ -1,14 +1,19 @@
-"use client"
+"use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Search } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 export function FAQ() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [activeItem, setActiveItem] = useState("")
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeItem, setActiveItem] = useState("");
 
   const faqItems = [
     {
@@ -48,7 +53,8 @@ export function FAQ() {
     },
     {
       id: "item-6",
-      question: "Can users from restricted states participate in free contests?",
+      question:
+        "Can users from restricted states participate in free contests?",
       answer:
         "Users from restricted states are advised to refrain from participating in any contests on Cricket Panga, including free ones, to ensure compliance with local laws.​",
       tags: ["restricted", "states", "free", "contests"],
@@ -98,7 +104,7 @@ export function FAQ() {
 4. Share Your Receipt of the payment on WhatsApp to receive your welcome bonus.`,
       tags: ["signup", "how to join", "whatsapp", "qr code"],
     },
-    
+
     {
       id: "item-13",
       question: "How many people can play per edition?",
@@ -113,8 +119,10 @@ export function FAQ() {
     },
     {
       id: "item-15",
-      question: "If there aren’t 50,000 players, will the winner still get ₹1 lakh?",
-      answer: "No. If the total number of participants is less than 50,000, the prize amount will be adjusted proportionally based on the actual number of players.",
+      question:
+        "If there aren’t 50,000 players, will the winner still get ₹1 lakh?",
+      answer:
+        "No. If the total number of participants is less than 50,000, the prize amount will be adjusted proportionally based on the actual number of players.",
       tags: ["prize", "adjustment", "participants"],
     },
     {
@@ -124,20 +132,20 @@ export function FAQ() {
 Note: This offer is not available after the 10,000th sign-up.`,
       tags: ["wallet", "offer", "₹149", "₹99"],
     },
-  ]
+  ];
 
   const filteredFAQs = searchQuery
     ? faqItems.filter(
         (item) =>
           item.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
           item.answer.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.tags.some((tag) => tag.includes(searchQuery.toLowerCase())),
+          item.tags.some((tag) => tag.includes(searchQuery.toLowerCase()))
       )
-    : faqItems
+    : faqItems;
 
   return (
     <section id="faq" className="py-12 md:py-20 bg-gray-50">
-      <div className="container px-4 md:px-6">
+      <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl">
@@ -162,15 +170,27 @@ Note: This offer is not available after the 10,000th sign-up.`,
         </div>
 
         <div className="mx-auto max-w-3xl">
-          <Accordion type="single" collapsible className="w-full" value={activeItem} onValueChange={setActiveItem}>
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+            value={activeItem}
+            onValueChange={setActiveItem}
+          >
             {filteredFAQs.length > 0 ? (
               filteredFAQs.map((item) => (
-                <AccordionItem key={item.id} value={item.id} className="border rounded-lg mb-3 md:mb-4 overflow-hidden">
+                <AccordionItem
+                  key={item.id}
+                  value={item.id}
+                  className="border rounded-lg mb-3 md:mb-4 overflow-hidden"
+                >
                   <AccordionTrigger className="text-left px-4 md:px-6 hover:bg-gray-100 transition-colors text-sm md:text-base py-3 md:py-4">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="px-4 md:px-6 pb-3 md:pb-4">
-                    <div className="pt-2 text-sm md:text-base text-gray-600">{item.answer}</div>
+                    <div className="pt-2 text-sm md:text-base text-gray-600">
+                      {item.answer}
+                    </div>
                     <div className="flex flex-wrap gap-1 md:gap-2 mt-3 md:mt-4">
                       {item.tags.map((tag, index) => (
                         <span
@@ -187,7 +207,9 @@ Note: This offer is not available after the 10,000th sign-up.`,
               ))
             ) : (
               <div className="text-center py-6 md:py-8">
-                <p className="text-gray-500 mb-4 text-sm md:text-base">No FAQs found matching your search.</p>
+                <p className="text-gray-500 mb-4 text-sm md:text-base">
+                  No FAQs found matching your search.
+                </p>
                 <Button variant="outline" onClick={() => setSearchQuery("")}>
                   Clear Search
                 </Button>
@@ -197,5 +219,5 @@ Note: This offer is not available after the 10,000th sign-up.`,
         </div>
       </div>
     </section>
-  )
+  );
 }

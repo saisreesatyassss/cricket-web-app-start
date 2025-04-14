@@ -57,8 +57,6 @@ export function LiveMatches() {
     },
   ]
 
-  
-
   const formatTimeRemaining = (startTime: Date): string => {
     const diff = startTime.getTime() - currentTime.getTime()
     if (diff <= 0) return "Started"
@@ -75,7 +73,7 @@ export function LiveMatches() {
 
   return (
     <section id="live-matches" className="py-12 md:py-16 bg-white">
-      <div className="container px-4 md:px-6">
+      <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-10">
           <div className="space-y-2">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tighter sm:text-4xl">Upcoming & Live Matches</h2>
