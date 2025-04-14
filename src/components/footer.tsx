@@ -19,7 +19,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative overflow-hidden rounded-full transition-all duration-300 group-hover:scale-110">
                 <Image
-                  src="/logo.png"
+                  src="/Logo.svg"
                   alt="Cricket Panga Logo"
                   width={40}
                   height={40}
