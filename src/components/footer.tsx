@@ -110,31 +110,31 @@ export function Footer() {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   About Us
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
-                  href="#"
+                  href="#features"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
-                  How to Play
+                  Features
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#how-it-works"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
-                  Upcoming Matches
+                  How It Works
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
@@ -149,7 +149,7 @@ export function Footer() {
                 >
                   IPL Fantasy
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -158,41 +158,41 @@ export function Footer() {
               Support
             </h3>
             <ul className="space-y-1 md:space-y-2 text-xs md:text-sm">
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   Help Center
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
-                  href="#"
+                  href="#faq"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   FAQs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   Contact Us
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   href="#"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   Responsible Play
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
-                  href="#"
+                  href="/terms-and-conditions"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   Terms & Conditions
@@ -200,7 +200,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/terms-and-conditions"
                   className="hover:text-white transition-colors relative inline-block after:absolute after:bottom-0 after:left-0 after:bg-blue-400 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
                 >
                   Privacy Policy
@@ -274,7 +274,7 @@ export function Footer() {
             <p className="text-[10px] md:text-xs text-center md:text-right">
               18+ only. Fantasy sports involves financial risk and may be
               addictive. Not available in Andhra Pradesh, Assam, Odisha,
-              Telangana, Nagaland, Sikkim, and Tamil Nadu.
+              Telangana, Nagaland and Sikkim.
             </p>
           </div>
 

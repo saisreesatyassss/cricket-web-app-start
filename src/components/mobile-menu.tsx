@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Badge } from "@/components/ui/badge"
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false)
@@ -12,12 +13,12 @@ export function MobileMenu() {
   const navLinks = [
     { href: "#features", label: "Features" },
     { href: "#how-it-works", label: "How It Works" },
-    { href: "#live-matches", label: "Live Matches" },
-    { href: "#ai-team-maker", label: "AI Team Maker" },
-    { href: "#testimonials", label: "Testimonials" },
+    { href: "#live-matches", label: "Live Matches", comingSoon: true },
+    { href: "#analytics", label: "Analytics", comingSoon: true },
+    { href: "#discussion-board", label: "Discussion Board", comingSoon: true },
+    { href: "#ai-team-maker", label: "AI Team Maker", comingSoon: true },
     { href: "#faq", label: "FAQ" },
   ]
-
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
@@ -29,15 +30,21 @@ export function MobileMenu() {
       <SheetContent side="right" className="w-[300px] sm:w-[350px] pt-10 px-5">
         <nav className="flex flex-col gap-4">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-lg font-medium py-2 hover:text-blue-700 transition-colors relative group"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+            <div key={link.href} className="flex items-center justify-between">
+              <Link
+                href={link.href}
+                className="text-lg font-medium py-2 hover:text-blue-700 transition-colors relative group"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              {link.comingSoon && (
+                <Badge variant="outline" className="text-xs bg-gray-100 text-gray-600 border border-gray-300">
+                  Coming Soon
+                </Badge>
+              )}
+            </div>
           ))}
           <div className="flex flex-col gap-2 mt-4 pt-4 border-t">
             <Button
