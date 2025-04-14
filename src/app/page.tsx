@@ -69,18 +69,12 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            {/* <Button
-              asChild
-              variant="outline"
-              className="hidden sm:flex hover:border-blue-700 hover:text-blue-700 transition-all duration-300"
-            >
-              <Link href="/login">Login</Link>
-            </Button> */}
+ 
             <Button
               asChild
               className="hidden sm:flex bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300"
             >
-              <Link href="#early-access">Get Early Access</Link>
+              <Link href="/early-access">Get Early Access</Link>
             </Button>
             <MobileMenu />
           </div>
@@ -94,31 +88,7 @@ export default function Home() {
           </div>
         </div>
         <EarlyAccess />
-        {/* <div className="flex flex-col items-center justify-center">
-          <Button
-            asChild
-            className="sm:flex max-w-80 bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:translate-y-0 active:scale-95"
-          >
-            <Link href="#early-access" className="flex items-center gap-2">
-              Get Early Access
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </Link>
-          </Button>
-        </div> */}
+     
         {/* <LiveMatches /> */}
         <ScanPayJoin />
         <AITeamMaker />
