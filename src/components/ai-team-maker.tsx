@@ -37,7 +37,7 @@ export function AITeamMaker() {
             <div className="relative rounded-xl overflow-hidden border shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl"></div>
               <div className="relative aspect-video overflow-hidden">
-                <Image src="/ai-team-maker.png" alt="AI Cricket Fantasy Team Maker" fill className="object-cover" />
+                <Image src="/ai-team-maker.png" alt="AI Cricket Fantasy Team Maker" fill className="object-contain" />
               </div>
               <div className="absolute top-3 right-3">
                 <div className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
