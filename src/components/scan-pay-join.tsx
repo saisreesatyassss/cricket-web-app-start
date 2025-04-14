@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, QrCode, Smartphone, CreditCard } from "lucide-react"
-import Link from "next/link"
-import { useInView } from "react-intersection-observer"
-import { useEffect, useState } from "react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, QrCode, Smartphone, CreditCard } from "lucide-react";
+import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
 
 export function ScanPayJoin() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
-  })
+  });
 
-  const [activeStep, setActiveStep] = useState(0)
+  const [activeStep, setActiveStep] = useState(0);
 
   const steps = [
     {
@@ -34,18 +34,21 @@ export function ScanPayJoin() {
       icon: <Smartphone className="h-6 w-6 md:h-8 md:w-8 text-blue-700" />,
       image: "/join-step.png",
     },
-  ]
+  ];
 
   // Auto-advance steps
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveStep((prev) => (prev + 1) % steps.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [steps.length])
+      setActiveStep((prev) => (prev + 1) % steps.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [steps.length]);
 
   return (
-    <section className="py-12 md:py-16 bg-gradient-to-b from-white to-blue-50">
+    <section
+      className="py-12 md:py-16 bg-gradient-to-b from-white to-blue-50"
+      id="scan-pay-join"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-10">
           <div className="inline-flex items-center rounded-full border px-4 py-1 md:px-6 md:py-2 text-base md:text-lg font-bold bg-orange-100 text-orange-700 border-orange-200">
@@ -55,11 +58,15 @@ export function ScanPayJoin() {
             Join Cricket Panga in 3 Simple Steps
           </h2>
           <p className="max-w-[600px] text-sm sm:text-base text-gray-500">
-            Our simple process makes it easy to start playing fantasy cricket in minutes
+            Our simple process makes it easy to start playing fantasy cricket in
+            minutes
           </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
+        <div
+          ref={ref}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center"
+        >
           <div
             className={`transition-all duration-1000 ${
               inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
@@ -71,7 +78,9 @@ export function ScanPayJoin() {
                   <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-red-500 mr-2"></div>
                   <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-yellow-500 mr-2"></div>
                   <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500 mr-2"></div>
-                  <div className="text-white text-xs md:text-sm font-medium ml-2">UPI Payment</div>
+                  <div className="text-white text-xs md:text-sm font-medium ml-2">
+                    UPI Payment
+                  </div>
                 </div>
 
                 <div className="absolute top-10 md:top-12 left-0 right-0 bottom-0 flex items-center justify-center">
@@ -79,19 +88,28 @@ export function ScanPayJoin() {
                     <div
                       key={index}
                       className={`absolute inset-0 flex flex-col items-center justify-center p-4 md:p-6 transition-all duration-500 ${
-                        activeStep === index ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                        activeStep === index
+                          ? "opacity-100 scale-100"
+                          : "opacity-0 scale-95"
                       }`}
                     >
                       <div className="relative h-32 w-32 md:h-48 md:w-48 mb-4 md:mb-6">
                         <Image
-                          src={step.image || "/placeholder.svg?height=200&width=200"}
+                          src={
+                            step.image ||
+                            "/placeholder.svg?height=200&width=200"
+                          }
                           alt={step.title}
                           fill
                           className="object-contain"
                         />
                       </div>
-                      <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-1 md:mb-2">{step.title}</h3>
-                      <p className="text-sm md:text-base text-gray-600">{step.description}</p>
+                      <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-1 md:mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-gray-600">
+                        {step.description}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -102,7 +120,9 @@ export function ScanPayJoin() {
                   <button
                     key={index}
                     className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
-                      activeStep === index ? "bg-blue-700 w-6 md:w-8" : "bg-blue-300"
+                      activeStep === index
+                        ? "bg-blue-700 w-6 md:w-8"
+                        : "bg-blue-300"
                     }`}
                     onClick={() => setActiveStep(index)}
                   />
@@ -127,14 +147,18 @@ export function ScanPayJoin() {
               >
                 <div
                   className={`rounded-full p-3 md:p-4 ${
-                    activeStep === index ? "bg-blue-100 text-blue-700" : "bg-gray-100 text-gray-500"
+                    activeStep === index
+                      ? "bg-blue-100 text-blue-700"
+                      : "bg-gray-100 text-gray-500"
                   }`}
                 >
                   {step.icon}
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold">{step.title}</h3>
-                  <p className="text-sm md:text-base text-gray-500 mt-1">{step.description}</p>
+                  <p className="text-sm md:text-base text-gray-500 mt-1">
+                    {step.description}
+                  </p>
                   {activeStep === index && (
                     <div className="mt-2 animate-fadeIn">
                       <ul className="text-xs md:text-sm text-gray-600 space-y-1">
@@ -142,7 +166,8 @@ export function ScanPayJoin() {
                           <>
                             <li className="flex items-center gap-1">
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
-                              Open any UPI app like Google Pay, PhonePe, or Paytm
+                              Open any UPI app like Google Pay, PhonePe, or
+                              Paytm
                             </li>
                             <li className="flex items-center gap-1">
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
@@ -154,11 +179,19 @@ export function ScanPayJoin() {
                           <>
                             <li className="flex items-center gap-1">
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
-                              Pay ₹99 using UPI, net banking, or cards
+                              Pay{" "}
+                              <span className="font-bold text-blue-700">
+                                ₹99
+                              </span>{" "}
+                              using UPI, net banking, or cards
                             </li>
                             <li className="flex items-center gap-1">
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
-                              Get ₹149 credited to your wallet within 4 days
+                              Get{" "}
+                              <span className="font-bold text-blue-700">
+                                ₹149
+                              </span>{" "}
+                              credited to your wallet within 4 days
                             </li>
                           </>
                         )}
@@ -186,8 +219,12 @@ export function ScanPayJoin() {
                 asChild
                 className="bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300 group"
               >
-                <Link href="#early-access" className="inline-flex items-center gap-2">
-                  Get Started Now <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Link
+                  href="#early-access"
+                  className="inline-flex items-center gap-2"
+                >
+                  Get Started Now{" "}
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
             </div>
@@ -195,5 +232,5 @@ export function ScanPayJoin() {
         </div>
       </div>
     </section>
-  )
+  );
 }
