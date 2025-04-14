@@ -86,7 +86,8 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="flex-1">
+      {/* mt-16 in phone only */}
+      <main className="flex-1 mt-10 md:mt-0">
         <HeroSection />
         <div className="py-8 md:py-12 bg-white">
           <div className="container max-w-8xl mx-auto px-4 md:px-6 2xl:px-8">
