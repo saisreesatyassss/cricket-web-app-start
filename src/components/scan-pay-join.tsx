@@ -191,7 +191,7 @@ export function ScanPayJoin() {
                               <span className="font-bold text-blue-700">
                                 ₹149
                               </span>{" "}
-                              credited to your wallet within 4 days
+                              credited to your wallet at launch
                             </li>
                           </>
                         )}
