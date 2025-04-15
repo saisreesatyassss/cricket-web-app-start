@@ -164,10 +164,9 @@ export function InvestmentOpportunity() {
           <h2 className="text-2xl md:text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl">
             Invest in Cricket Panga City Editions
           </h2>
-          <p className="max-w-[900px] text-sm sm:text-base text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Be part of India's fastest growing fantasy cricket platform by
-            investing in our city-specific editions
-          </p>
+            <p className="max-w-[900px] text-sm sm:text-base text-gray-500 md:leading-relaxed lg:leading-relaxed xl:leading-relaxed md:text-xl lg:text-base xl:text-xl">
+            Invest in the city of your choice, and the edition can be branded with your brand too.
+            </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
