@@ -141,7 +141,7 @@ export function InvestmentOpportunity() {
   ]
 
   return (
-    <section id="investment" className="py-12 md:py-20 bg-white">
+    <section id="investment" className="py-12 md:py-20 bg-white mt-10 ">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8 md:mb-12">
           <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-blue-50 text-blue-700 border-blue-200">
