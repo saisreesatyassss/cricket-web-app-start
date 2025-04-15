@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { HeroSection } from "@/components/hero-section";
 import { Features } from "@/components/features";
 import { HowItWorks } from "@/components/how-it-works";
@@ -11,74 +8,12 @@ import { EarlyAccess } from "@/components/early-access";
 import { MiniGame } from "@/components/mini-game";
 import { RegionalSupport } from "@/components/regional-support";
 import { ScanPayJoin } from "@/components/scan-pay-join";
-import { MobileMenu } from "@/components/mobile-menu";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { AITeamMaker } from "@/components/ai-team-maker";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
-      <header className="fixed top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container max-w-8xl mx-auto flex h-16 items-center justify-between px-4 md:px-6 2xl:px-8">
-          <Link href="/" className="flex items-center gap-2 group">
-            <Image
-              src="/Logo.svg"
-              alt="Cricket Panga Logo"
-              width={130}
-              height={60}
-              className="h-10 w-auto"
-            />
-            <span className="text-xl font-bold text-blue-700 group-hover:text-blue-600 transition-colors">
-              Cricket Panga{" "}
-              <span className="text-orange-500 text-sm font-semibold">
-                India Edition
-              </span>
-            </span>
-          </Link>
-          <nav className="hidden md:flex gap-6 lg:gap-8">
-            <Link
-              href="#features"
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
-            >
-              Features
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
-            >
-              How It Works
-            </Link>
-            {/* <Link
-              href="#live-matches"
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
-            >
-              Live Matches
-            </Link> */}
-            <Link
-              href="#ai-team-maker"
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
-            >
-              AI Team Maker
-            </Link>
-            <Link
-              href="#faq"
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:bg-blue-700 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300"
-            >
-              FAQ
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
- 
-            <Button
-              asChild
-              className="hidden sm:flex bg-blue-700 hover:bg-blue-800 shadow-lg hover:shadow-blue-200 transition-all duration-300"
-            >
-              <Link href="/early-access">Get Early Access</Link>
-            </Button>
-            <MobileMenu />
-          </div>
-        </div>
-      </header>
       <main className="flex-1 mt-10 md:mt-0">
         <HeroSection />
         <div className="py-8 md:py-12 bg-white">
@@ -87,7 +22,6 @@ export default function Home() {
           </div>
         </div>
         <EarlyAccess />
-     
         {/* <LiveMatches /> */}
         <ScanPayJoin />
         <AITeamMaker />
