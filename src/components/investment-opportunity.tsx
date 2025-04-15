@@ -246,9 +246,9 @@ export function InvestmentOpportunity() {
                     <Clock className="h-4 w-4 text-green-700" />
                   </div>
                   <div>
-                    <h5 className="font-semibold">Quick Returns</h5>
+                    <h5 className="font-semibold">Quarterly Returns</h5>
                     <p className="text-sm text-gray-600">
-                      Get your capital back in two years plus ongoing profits
+                      Receive quarterly returns for two years, and at the end of the two-year agreement, get your capital back as well.
                     </p>
                   </div>
                 </div>
