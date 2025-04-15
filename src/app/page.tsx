@@ -7,7 +7,6 @@ import { HowItWorks } from "@/components/how-it-works";
 // import { Testimonials } from "@/components/testimonials";
 import { FAQ } from "@/components/faq";
 import { EarlyAccess } from "@/components/early-access";
-import { Footer } from "@/components/footer";
 // import { LiveMatches } from "@/components/live-matches";
 import { MiniGame } from "@/components/mini-game";
 import { RegionalSupport } from "@/components/regional-support";
@@ -99,7 +98,6 @@ export default function Home() {
         <RegionalSupport />
         <FAQ />
       </main>
-      <Footer />
     </div>
   );
 }

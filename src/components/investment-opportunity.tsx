@@ -14,6 +14,9 @@ import {
   BarChart4,
   Percent,
   RefreshCw,
+  Clock,
+  Coffee,
+  Megaphone,
 } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
@@ -227,6 +230,28 @@ export function InvestmentOpportunity() {
                     </p>
                   </div>
                 </div>
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-green-100 p-2 flex-shrink-0">
+                    <Coffee className="h-4 w-4 text-green-700" />
+                  </div>
+                  <div>
+                    <h5 className="font-semibold">Passive Investment</h5>
+                    <p className="text-sm text-gray-600">
+                      Enjoy returns with no active management required from you
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-green-100 p-2 flex-shrink-0">
+                    <Clock className="h-4 w-4 text-green-700" />
+                  </div>
+                  <div>
+                    <h5 className="font-semibold">Quick Returns</h5>
+                    <p className="text-sm text-gray-600">
+                      Get your capital back in two years plus ongoing profits
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -291,6 +316,7 @@ export function InvestmentOpportunity() {
                   </div>
                   <span className="text-sm">
                     Marketing and promotional support from Cricket Panga
+                    provided by Pintude Solutions
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -311,6 +337,26 @@ export function InvestmentOpportunity() {
                   </div>
                   <span className="text-sm">
                     Option to invest in multiple city editions
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="rounded-full bg-green-100 p-1 mt-0.5">
+                    <svg
+                      className="h-3 w-3 text-green-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-sm">
+                    Completely passive investment with no day-to-day involvement required
                   </span>
                 </li>
               </ul>
@@ -406,15 +452,27 @@ export function InvestmentOpportunity() {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="rounded-full bg-blue-100 p-2 flex-shrink-0">
-                    <TrendingUp className="h-4 w-4 text-blue-700" />
+                    <Coffee className="h-4 w-4 text-blue-700" />
                   </div>
                   <div>
                     <h4 className="font-semibold">
-                      Exclusive Investment Privileges
+                      Passive Income Stream
                     </h4>
                     <p className="text-sm text-gray-500">
-                      Investors in the early edition enjoy the first right to
-                      invest in future editions prior to IPL and WPL 2026
+                      This passive investment gives returns and your capital back in two years with no work required
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-blue-100 p-2 flex-shrink-0">
+                    <Megaphone className="h-4 w-4 text-blue-700" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">
+                      Professional Marketing Support
+                    </h4>
+                    <p className="text-sm text-gray-500">
+                      Marketing and promotional support for Cricket Panga provided by Pintude Solutions
                     </p>
                   </div>
                 </div>
