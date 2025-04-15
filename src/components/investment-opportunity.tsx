@@ -165,7 +165,8 @@ export function InvestmentOpportunity() {
             Invest in Cricket Panga City Editions
           </h2>
             <p className="max-w-[900px] text-sm sm:text-base text-gray-500 md:leading-relaxed lg:leading-relaxed xl:leading-relaxed md:text-xl lg:text-base xl:text-xl">
-            Invest in the city of your choice, and the edition can be branded with your brand too.
+            Be a part of fast growing fantasy cricket platform
+Choose your city, invest smartly — and watch your brand take over the entire edition
             </p>
         </div>
 
@@ -253,7 +254,9 @@ export function InvestmentOpportunity() {
                 </div>
               </div>
             </div>
-
+            <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs sm:text-sm font-medium bg-blue-50 text-blue-700 border-blue-200">
+            Launching on June 30, 2025
+          </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Key Benefits</h4>
               <ul className="space-y-2">
