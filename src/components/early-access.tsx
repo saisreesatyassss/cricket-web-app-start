@@ -161,7 +161,7 @@ export function EarlyAccess() {
               </h2>
               <p className="max-w-[600px] text-sm sm:text-base md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Join Cricket Panga now and get exclusive benefits for Indian
-                cricket fans, including our AI Team Maker worth ₹1000 for FREE!
+                cricket fans, including our AI Team Maker worth ₹1200 for FREE!
               </p>
             </div>
             <ul className="grid gap-3">
@@ -201,7 +201,7 @@ export function EarlyAccess() {
                 </div>
                 <span className="text-sm sm:text-base">
                   <span className="font-bold">FREE AI Team Maker</span> worth
-                  ₹1000 - Launching June 1, 2025
+                  ₹1200 - Launching June 1, 2025
                 </span>
               </li>
               <li className="flex items-center gap-2">
@@ -293,7 +293,7 @@ export function EarlyAccess() {
                       >
                         ₹149
                       </TextShimmer>{" "}
-                      + FREE AI Team Maker (worth ₹1000) for just{" "}
+                      + FREE AI Team Maker (worth ₹1200) for just{" "}
                       <TextShimmer
                         duration={1.2}
                         className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"

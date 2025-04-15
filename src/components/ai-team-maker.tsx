@@ -42,7 +42,7 @@ export function AITeamMaker() {
               </div>
               <div className="absolute top-3 right-3">
                 <div className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
-                  Worth ₹1000
+                  Worth ₹1200
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ export function AITeamMaker() {
 
             <p className="text-sm sm:text-base text-gray-600">
               Our advanced AI analyzes thousands of data points to create the perfect fantasy cricket team for each
-              match. This premium feature (worth ₹1000) is <span className="font-bold text-blue-700">FREE</span> for all
+              match. This premium feature (worth ₹1200) is <span className="font-bold text-blue-700">FREE</span> for all
               &quot;Scan Karo, Pay Karo, Join Karo&quot; early access users.
             </p>
 
@@ -123,7 +123,7 @@ export function AITeamMaker() {
                 </Link>
               </Button>
               <p className="text-xs text-gray-500 mt-2">
-                *Limited time offer. AI Team Maker will be available at ₹1000 after launch.
+                *Limited time offer. AI Team Maker will be available at ₹1200 after launch.
               </p>
             </div>
           </div>
