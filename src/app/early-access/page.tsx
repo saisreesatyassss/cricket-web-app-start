@@ -308,7 +308,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
               </div>
 
               <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-                <div className="space-y-5 rounded-md -space-y-px">
+                <div className="space-y-5 rounded-md ">
                   <div>
                     <label
                       htmlFor="name"

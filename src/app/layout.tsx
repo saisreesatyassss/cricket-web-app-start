@@ -2,13 +2,14 @@ import type React from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import Head from "next/head";  // Import Head from next/head
+import Script from "next/script";  // Replace Head with Script
 import { Footer } from "@/components/footer";
 import { Navmenu } from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://cricketpanga.com"), // Add this line
   title: "Cricket Panga - Fantasy Cricket Game",
   description: "Join India's fastest growing fantasy cricket platform. Create your dream team, compete with friends, and win real cash prizes.",
   keywords: [
@@ -30,8 +31,6 @@ export const metadata = {
     "fantasy cricket team",
     "fantasy cricket predictions"
   ],
-  themeColor: "#0F3CA1",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   icons: {
     icon: [
       { url: "/Logo.svg", type: "image/svg+xml" },
@@ -94,24 +93,21 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-        <Navmenu/>
+          <Navmenu/>
           {children}
-      <Footer />
-
+          <Footer />
         </ThemeProvider>
 
-        {/* Google Analytics Script */}
-        <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE71J3TM4W"></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-BE71J3TM4W');
-            `}
-          </script>
-        </Head>
+        {/* Google Analytics Script - correct way in App Router */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-BE71J3TM4W" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BE71J3TM4W');
+          `}
+        </Script>
       </body>
     </html>
   );
