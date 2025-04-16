@@ -192,7 +192,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Footer } from "@/components/footer";
+// import { Footer } from "@/components/footer";
  import React, { ChangeEvent, FormEvent } from 'react';
 
 // Reminder: Keep this list updated based on current legal regulations for online gaming in India.
@@ -471,7 +471,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         </div>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
