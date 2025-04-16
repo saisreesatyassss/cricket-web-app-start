@@ -290,35 +290,8 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-br from-blue-50 via-white to-orange-50">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-        <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-2 group">
-            <Image
-              src="/Logo.svg"
-              alt="Cricket Panga Logo"
-              width={120}
-              height={50}
-              className="h-9 w-auto"
-            />
-            <span className="text-lg font-bold text-blue-700 group-hover:text-blue-600 transition-colors duration-200">
-              Cricket Panga{" "}
-              <span className="text-orange-500 text-xs font-medium align-super">
-                India Edition
-              </span>
-            </span>
-          </Link>
-          <div className="hidden md:flex gap-4">
-            <Link
-              href="/"
-              className="text-sm font-medium text-gray-600 hover:text-blue-700 hover:underline transition-colors duration-200"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </div>
-      </header>
+    <div className="flex min-h-screen flex-col bg-gradient-to-br from-blue-50 via-white to-orange-50 my-10">
+
 
       {/* Form Section */}
       <main className="flex flex-1 items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
