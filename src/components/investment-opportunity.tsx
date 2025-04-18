@@ -225,7 +225,7 @@ export function InvestmentOpportunity() {
                   <div>
                     <h5 className="font-semibold">Capital Recovery</h5>
                     <p className="text-sm text-gray-600">
-                      Full investment returned within two years
+                      Full investment returned within three years
                     </p>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ export function InvestmentOpportunity() {
                   <div>
                     <h5 className="font-semibold">Quarterly Returns</h5>
                     <p className="text-sm text-gray-600">
-                      Receive quarterly returns for two years, and at the end of the two-year agreement, get your capital back as well.
+                      Receive quarterly returns for three years, and at the end of the three-year agreement, get your capital back as well.
                     </p>
                   </div>
                 </div>
@@ -460,7 +460,7 @@ export function InvestmentOpportunity() {
                       Passive Income Stream
                     </h4>
                     <p className="text-sm text-gray-500">
-                      This passive investment gives returns and your capital back in two years with no work required
+                      This passive investment gives returns and your capital back in three years with no work required
                     </p>
                   </div>
                 </div>
@@ -473,7 +473,7 @@ export function InvestmentOpportunity() {
                       Professional Marketing Support
                     </h4>
                     <p className="text-sm text-gray-500">
-                      Marketing and promotional support for Cricket Panga provided by Pintude Solutions
+                      Marketing and promotional support for Cricket Panga provided by Pintude Solutions LLP
                     </p>
                   </div>
                 </div>
@@ -485,7 +485,7 @@ export function InvestmentOpportunity() {
                     <h4 className="font-semibold">Lucrative Returns</h4>
                     <p className="text-sm text-gray-500">
                       25% profit sharing yearly with full investment recovery
-                      within two years
+                      within three years
                     </p>
                   </div>
                 </div>
