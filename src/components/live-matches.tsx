@@ -50,7 +50,7 @@ export function LiveMatches() {
       team2Logo: "/australia-logo.png",
       startTime: new Date(currentTime.getTime() - 1 * 60 * 60 * 1000), // Started 1 hour ago
       prizePool: "₹5 Crore",
-      entryFee: "₹99",
+      entryFee: "₹49",
       isLive: true,
       score1: "245/4 (35.2)",
       score2: "187/6 (29.0)",

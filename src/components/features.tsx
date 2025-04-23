@@ -28,7 +28,7 @@ export function Features() {
     {
       icon: <Smartphone className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,
       title: "Easy Sign-Up",
-      description: "Scan QR code, pay ₹99, and get ₹149 credited to your wallet",
+      description: "Scan QR code, pay ₹49, and get ₹99 credited to your wallet",
     },
     {
       icon: <CreditCard className="h-5 w-5 sm:h-6 sm:w-6 text-blue-700" />,

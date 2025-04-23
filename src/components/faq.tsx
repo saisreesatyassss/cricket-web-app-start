@@ -25,10 +25,10 @@ export function FAQ() {
     },
     {
       id: "item-2",
-      question: "How does the ₹99 deposit offer work?",
+      question: "How does the ₹49 deposit offer work?",
       answer:
-        "When you deposit ₹99 into your Cricket Panga wallet, you receive a total value of ₹149. This includes your ₹99 deposit plus an additional ₹50 bonus. To activate this bonus, please share your payment receipt with us via WhatsApp at 8237358619. Once verified, the bonus will be credited to your account.​",
-      tags: ["deposit", "offer", "bonus", "₹99", "wallet"],
+        "When you deposit ₹49 into your Cricket Panga wallet, you receive a total value of ₹99. This includes your ₹49 deposit plus an additional ₹50 bonus. To activate this bonus, please share your payment receipt with us via WhatsApp at 8237358619. Once verified, the bonus will be credited to your account.​",
+      tags: ["deposit", "offer", "bonus", "₹49", "wallet"],
     },
     {
       id: "item-3",
@@ -99,7 +99,7 @@ export function FAQ() {
       answer: `To sign up, follow these simple steps:
 
 1. Scan the QR Code to initiate your journey.
-2. Make a Payment of ₹99 to your Cricket Panga wallet.
+2. Make a Payment of ₹49 to your Cricket Panga wallet.
 3. Send a WhatsApp Message by texting “Hi” to 8237358619.
 4. Share Your Receipt of the payment on WhatsApp to receive your welcome bonus.`,
       tags: ["signup", "how to join", "whatsapp", "qr code"],
@@ -127,10 +127,10 @@ export function FAQ() {
     },
     {
       id: "item-16",
-      question: "How do I avail the ₹99 for ₹149 wallet recharge offer?",
-      answer: `The first 10,000 users who sign up can get ₹149 credited to their wallet for just ₹99.
+      question: "How do I avail the ₹49 for ₹99 wallet recharge offer?",
+      answer: `The first 10,000 users who sign up can get ₹99 credited to their wallet for just ₹49.
 Note: This offer is not available after the 10,000th sign-up.`,
-      tags: ["wallet", "offer", "₹149", "₹99"],
+      tags: ["wallet", "offer", "₹99", "₹49"],
     },
   ];
 

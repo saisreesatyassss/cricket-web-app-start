@@ -16,7 +16,7 @@ export function HowItWorks() {
     {
       number: 1,
       title: "Scan, Pay & Join",
-      description: "Scan the QR code, pay ₹99, and text 'Hi' to 8237358618 on WhatsApp",
+      description: "Scan the QR code, pay ₹49, and text 'Hi' to 8237358618 on WhatsApp",
       image: "/step1.png",
     },
     {

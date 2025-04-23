@@ -424,7 +424,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
               </h2>
               <div className="text-center mb-4">
                 <p className="text-gray-700">Hi {userData.name}, you're almost there!</p>
-                <p className="text-gray-700 mt-2">Pay ₹99 to activate your Cricket Panga account</p>
+                <p className="text-gray-700 mt-2">Pay ₹49 to activate your Cricket Panga account</p>
                 <p className="text-sm text-gray-500 mt-1">Scan the QR code below to make payment</p>
               </div>
               
@@ -444,7 +444,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
               </div>
               
               <div className="text-center">
-                <p className="font-medium text-gray-800">Amount: ₹99 only</p>
+                <p className="font-medium text-gray-800">Amount: ₹49 only</p>
                 <p className="text-sm text-gray-600 mt-1">After payment, click the button below</p>
               </div>
               

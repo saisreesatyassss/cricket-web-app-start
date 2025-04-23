@@ -175,14 +175,14 @@ export function EarlyAccess() {
                     duration={1.2}
                     className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                   >
-                    ₹99
+                    ₹49
                   </TextShimmer>
                   , get <span> </span>
                   <TextShimmer
                     duration={1.2}
                     className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                   >
-                    ₹149
+                    ₹99
                   </TextShimmer>{" "}
                   after launch
                 </span>
@@ -235,7 +235,7 @@ export function EarlyAccess() {
                       duration={1.2}
                       className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                     >
-                      ₹99
+                      ₹49
                     </TextShimmer>
                   </div>
                 </div>
@@ -251,7 +251,7 @@ export function EarlyAccess() {
                       duration={1.2}
                       className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                     >
-                      ₹149
+                      ₹99
                     </TextShimmer>{" "}
                     + AI Team Maker
                   </div>
@@ -291,14 +291,14 @@ export function EarlyAccess() {
                         duration={1.2}
                         className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                       >
-                        ₹149
+                        ₹99
                       </TextShimmer>{" "}
                       + FREE AI Team Maker (worth ₹1200) for just{" "}
                       <TextShimmer
                         duration={1.2}
                         className="font-medium [--base-color:theme(colors.orange.500)] [--base-gradient-color:theme(colors.orange.200)] dark:[--base-color:theme(colors.orange.500)] dark:[--base-gradient-color:theme(colors.orange.200)]"
                       >
-                        ₹99
+                        ₹49
                       </TextShimmer>
                     </p>
                   </div>
@@ -389,7 +389,7 @@ export function EarlyAccess() {
                           <>
                             Pay{" "}
                             <span className="font-bold text-[#ff7723]">
-                              ₹99
+                              ₹49
                             </span>{" "}
                             & Get Started{" "}
                             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

@@ -24,7 +24,7 @@ export function ScanPayJoin() {
     },
     {
       title: "Pay Karo",
-      description: "Pay ₹99 using your favorite payment method",
+      description: "Pay ₹49 using your favorite payment method",
       icon: <CreditCard className="h-6 w-6 md:h-8 md:w-8 text-blue-700" />,
       image: "/pay-step.png",
     },
@@ -181,7 +181,7 @@ export function ScanPayJoin() {
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
                               Pay{" "}
                               <span className="font-bold text-blue-700">
-                                ₹99
+                                ₹49
                               </span>{" "}
                               using UPI, net banking, or cards
                             </li>
@@ -189,7 +189,7 @@ export function ScanPayJoin() {
                               <span className="w-1 h-1 bg-blue-700 rounded-full"></span>
                               Get{" "}
                               <span className="font-bold text-blue-700">
-                                ₹149
+                                ₹99
                               </span>{" "}
                               credited to your wallet at launch
                             </li>
