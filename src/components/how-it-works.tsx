@@ -17,19 +17,19 @@ export function HowItWorks() {
       number: 1,
       title: "Scan, Pay & Join",
       description: "Scan the QR code, pay ₹49, and text 'Hi' to 8237358618 on WhatsApp",
-      // image: "/step1.png",
+      image: "/step1.png",
     },
     {
       number: 2,
       title: "Share Receipt & Get Bonus",
       description: "Send your payment receipt via WhatsApp to receive your ₹50 bonus",
-      // image: "/step2.png",
+      image: "/step2.png",
     },
     {
       number: 3,
       title: "Join Contests & Win Big",
       description: "Participate in matches for just ₹10 per contest and win from the 25+ lakh prize pool",
-      // image: "/step3.png",
+      image: "/step3.png",
     },
   ]
 
