@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
  import React, { ChangeEvent, FormEvent } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams} from 'next/navigation';
 
 
 const legalGamingStates = [
