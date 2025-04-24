@@ -207,7 +207,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
                       id="referral"
                       name="referral"
                       type="text"
-                      required
+                      // required
                       placeholder="e.g., XYZ123   (Optional)"
                       value={userData.referral}
                       onChange={handleInputChange}
