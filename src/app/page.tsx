@@ -10,6 +10,7 @@ import { RegionalSupport } from "@/components/regional-support";
 import { ScanPayJoin } from "@/components/scan-pay-join";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { AITeamMaker } from "@/components/ai-team-maker";
+import { MobileAppPreview } from "@/components/mobile-app-preview";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         {/* <LiveMatches /> */}
         <ScanPayJoin />
         <AITeamMaker />
+        <MobileAppPreview/>
         <Features />
         <HowItWorks />
         <MiniGame />
